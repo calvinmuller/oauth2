@@ -152,6 +152,7 @@ class Client extends http.BaseClient {
     _credentials = await credentials.refresh(
         identifier: identifier,
         secret: secret,
+        headers: headers,
         newScopes: newScopes,
         basicAuth: _basicAuth,
         httpClient: _httpClient);
